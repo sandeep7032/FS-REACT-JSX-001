@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      const head = React.createElement("h1", {}, "About Us");
+      const p1 = React.createElement(
+        "p",
+        {},
+        "At Zappos.com our purpose is simple to live and deliver WOW."
+      );
+      const p2 = React.createElement(
+        "p",
+        {},
+        "Twenty years ago, we began as a small online retailer that only sold shoes. Today we still sell shoes -- as well as clothing handbags. accessories, and more. That 'more' is providing the very best customer service. customer experience. and company culture. We aim to inspire the world by showing it's possible to simultaneously deliver happiness to customers, employees, vendors, shareholders, and the community in a ling term, sustainable way."
+      );
+      const p3 = React.createElement(
+        "p",
+        {},
+        "We hope in the future people won't even realize we started selling shoes online.Instead they'll know Zappos as a service company that just happens to sell ______."
+      );
+      const div = React.createElement(
+        "div",
+        {
+          className: "div",
+          style: { textAlign: "center" },
+        },
+        [head, p1, p2, p3]
+      );
+
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(div);
+      console.log(div);
+    </script>
+  </body>
+</html>
